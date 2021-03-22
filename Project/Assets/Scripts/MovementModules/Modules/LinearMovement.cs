@@ -8,6 +8,6 @@ public class LinearMovement : MovementModule
 
     private void Awake()
     {
-        Accessor<MovementModule>.Instance().Register(this);
+        TAccessor<MovementModule>.Instance().Register(this);
     }
 }
