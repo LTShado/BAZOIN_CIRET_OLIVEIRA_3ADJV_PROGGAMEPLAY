@@ -1,12 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
-public class Accessor<T> where T: TModule
+public class TAccessor<T> where T: TModule
 {
 
-    static public Accessor<T> Instance() { return _singleton; }
-    static private Accessor<T> _singleton;
+    static public TAccessor<T> Instance() { return _singleton; }
+    static private TAccessor<T> _singleton;
 
     private List<T> _moduleList;
 
