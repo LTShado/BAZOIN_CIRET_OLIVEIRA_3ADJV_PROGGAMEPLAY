@@ -52,17 +52,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\MovementModules\MovementSystem.cs" />
      <Compile Include="Assets\Scripts\TAccessor.cs" />
      <Compile Include="Assets\Scripts\IUpdater.cs" />
      <Compile Include="Assets\Scripts\MovementModules\MovementModule.cs" />
      <Compile Include="Assets\Scripts\Pool.cs" />
      <Compile Include="Assets\Scripts\PoolScriptableObject.cs" />
+     <Compile Include="Assets\Scripts\InteractModule\InteractModule.cs" />
+     <Compile Include="Assets\Scripts\AttackModules\AttackModule.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\PoolableObject.cs" />
      <Compile Include="Assets\Scripts\ScriptTest.cs" />
-     <Compile Include="Assets\Scripts\MovementModules\Playermovement.cs" />
      <Compile Include="Assets\Scripts\PoolManager.cs" />
+     <Compile Include="Assets\Scripts\MovementModules\MovementSystem.cs" />
+     <Compile Include="Assets\Scripts\MovementModules\Playermovement.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -284,6 +286,15 @@
  </Reference>
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -631,31 +642,40 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/GitHub/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/GitHub/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/GitHub/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/GitHub/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/GitHub/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/GitHub/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/GitHub/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/GitHub/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/GitHub/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Sysroot.Linux_x86_64">
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.SysrootPackage.Editor">
+ <HintPath>C:/Users/eoliv/Desktop/Unity/BAZOIN_CIRET_OLIVEIRA_3ADJV_PROGGAMEPLAY/Project/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
