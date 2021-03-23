@@ -172,6 +172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectForPoolList:
+  - ObjectType: 0
+    Prefab: {fileID: 554276052498702354, guid: dd4379da82e784940af36655ba5d7072, type: 3}
+    Number: 10
   - ObjectType: 1
     Prefab: {fileID: 4143711797512382221, guid: 6a611ee1b34de7542a68c91a13039f7f, type: 3}
     Number: 15
@@ -511,18 +514,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 622799957, guid: 75ce76fc9b75daa4fbbc48bf669bb56e, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 622799957, guid: 75ce76fc9b75daa4fbbc48bf669bb56e, type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 622799957, guid: 75ce76fc9b75daa4fbbc48bf669bb56e, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6165448925069055242, guid: 75ce76fc9b75daa4fbbc48bf669bb56e, type: 3}
       propertyPath: m_Name
       value: Player

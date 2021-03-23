@@ -52,15 +52,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AttackModules\ShootModule.cs" />
      <Compile Include="Assets\Scripts\MovementModules\MovementSystem.cs" />
      <Compile Include="Assets\Scripts\TAccessor.cs" />
      <Compile Include="Assets\Scripts\IUpdater.cs" />
      <Compile Include="Assets\Scripts\MovementModules\MovementModule.cs" />
      <Compile Include="Assets\Scripts\Pool.cs" />
      <Compile Include="Assets\Scripts\PoolScriptableObject.cs" />
-     <Compile Include="Assets\Scripts\AttackModules\BulletMovement.cs" />
-     <Compile Include="Assets\Scripts\AttackModules\ShootSystem.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\PoolableObject.cs" />
      <Compile Include="Assets\Scripts\ScriptTest.cs" />
