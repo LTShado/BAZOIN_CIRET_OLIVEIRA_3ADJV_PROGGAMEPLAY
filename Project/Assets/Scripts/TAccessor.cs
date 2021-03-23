@@ -1,37 +1,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TAccessor<T> where T: TModule
+public class TAccessor<T> 
 {
-
-    static public TAccessor<T> Instance() { return _singleton; }
+    static public TAccessor<T> Instance()
+    {
+        return _singleton;
+    }
     static private TAccessor<T> _singleton;
 
-    private List<T> _moduleList;
+    List<T> moduleList;
 
-    public void Register(T t)
-    {
-        _moduleList.Add(t);
-    }
-
-    private void Awake()
+    public TAccessor()
     {
         _singleton = this;
-        _moduleList = new List<T>();
+        moduleList = new List<T>();
     }
 
-    public List<T> GetAllModule()
+    public void Add(T para)
     {
-
-        return _moduleList;
-        
+        moduleList.Add(para);
     }
 
-    public T TryGetModule(GameObject entity)
+    public List<T> DisplayListT()
     {
-        T component;
-        entity.TryGetComponent(out component);
-        return component;
+        return moduleList;
     }
-    
 }

@@ -1,4 +1,4 @@
-public abstract class InteractModule :TModule
+public abstract class InteractModule 
 {
     private void Awake()
     {
