@@ -53,16 +53,20 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\TAccessor.cs" />
+     <Compile Include="Assets\Scripts\IUpdater.cs" />
      <Compile Include="Assets\Scripts\MovementModules\MovementModule.cs" />
      <Compile Include="Assets\Scripts\TModule.cs" />
      <Compile Include="Assets\Scripts\Pool.cs" />
      <Compile Include="Assets\Scripts\PoolScriptableObject.cs" />
      <Compile Include="Assets\Scripts\InteractModule\InteractModule.cs" />
      <Compile Include="Assets\Scripts\AttackModules\AttackModule.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\PoolableObject.cs" />
      <Compile Include="Assets\Scripts\ScriptTest.cs" />
      <Compile Include="Assets\Scripts\MovementModules\Modules\LinearMovement.cs" />
      <Compile Include="Assets\Scripts\PoolManager.cs" />
+     <Compile Include="Assets\Scripts\MovementUpdater.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

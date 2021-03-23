@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TAccessor<T> where T: TModule
+public class TAccessor<T>:MonoBehaviour where T: TModule
 {
 
     static public TAccessor<T> Instance() { return _singleton; }
