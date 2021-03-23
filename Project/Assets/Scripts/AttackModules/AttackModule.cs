@@ -1,4 +1,4 @@
-public abstract class AttackModule 
+public abstract class AttackModule : TModule
 {
     private void Awake()
     {
