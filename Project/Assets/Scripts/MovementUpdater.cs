@@ -9,7 +9,7 @@ public class MovementUpdater : IUpdater
     {
         TAccessor<MovementModule> movAccessor = TAccessor<MovementModule>.Instance();
         
-        foreach (var module in movAccessor.GetAllModule())
+        foreach (var module in movAccessor.GetAllModule()) //gère les mouvement appliquer par le joueur pour manipuller une a plusieur entité a la foix
         {
             GameObject myEntity=module.gameObject;
             
