@@ -1,23 +1,28 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
-public class TAccessor<T>:MonoBehaviour where T: TModule
+public class TAccessor<T> where T: TModule
 {
-
-    static public TAccessor<T> Instance() { return _singleton; }
     static private TAccessor<T> _singleton;
-
     private List<T> _moduleList;
-
+    static public TAccessor<T> Instance()
+    {
+        if (_singleton == null)
+        {
+            _singleton = new TAccessor<T>();
+        }
+        return _singleton;
+    }
+    
     public void Register(T t)
     {
+        if (_moduleList == null)
+        {
+            _moduleList = new List<T>();
+        }
         _moduleList.Add(t);
-    }
-
-    private void Awake()
-    {
-        _singleton = this;
-        _moduleList = new List<T>();
     }
 
     public List<T> GetAllModule()

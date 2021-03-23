@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager _singleton;
+    private static GameManager _singleton;
 
     private static GameManager Instance()
     {
@@ -17,16 +17,23 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         _singleton = this;
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
+        InitUpdater();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
         
+        foreach (var up in UpdateList)
+        {
+            up.SystemUpdate();
+        }
+        
+    }
+
+    private void InitUpdater()
+    {
+        UpdateList.Add(new MovementUpdater());
     }
 }
