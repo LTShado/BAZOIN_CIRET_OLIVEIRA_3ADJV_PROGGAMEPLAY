@@ -24,6 +24,10 @@ public class TAccessor<T> where T: TModule
         }
         _moduleList.Add(t);
     }
+    public void UnRegister(T t)
+    {
+        _moduleList.Remove(t);
+    }
 
     public List<T> GetAllModule()
     {
@@ -31,12 +35,14 @@ public class TAccessor<T> where T: TModule
         return _moduleList;
         
     }
-
+    
     public T TryGetModule(GameObject entity)
     {
         T component;
         entity.TryGetComponent(out component);
         return component;
     }
+    
+    
     
 }

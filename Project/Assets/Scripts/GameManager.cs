@@ -35,5 +35,7 @@ public class GameManager : MonoBehaviour
     private void InitUpdater()
     {
         UpdateList.Add(new MovementUpdater());
+        UpdateList.Add(new BulletUpdater());
+        UpdateList.Add(new BulletMoveUpdater());
     }
 }
